@@ -1,0 +1,88 @@
+#lsm-app {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#launch-and-sell-movies-app header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#launch-and-sell-movies-app header h1 {
+    margin: 0;
+}
+
+#launch-and-sell-movies-app header nav {
+    margin-top: 10px;
+}
+
+#launch-and-sell-movies-app header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#launch-and-sell-movies-app header nav a:hover {
+    color: #ccc;
+}
+
+.movies {
+    width: 100%;
+    max-width: 90rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    margin: 2rem auto;
+    list-style: none;
+    padding: 0;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+    background: linear-gradient(90deg, #2c1e19, #25200f);
+}
+
+.movie h2 {
+    color: #ddd6cb;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.movie p {
+    font-size: 0.75rem;
+    color: #cfa69b;
+    font-style: italic;
+    margin: 10px 0px !important;
+}
+
+.movie h2, p {
+    margin: 0;
+}
+
+.movie-featured {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-featured svg {
+    cursor: pointer;
+}
+
+.movie-featured svg:hover, .movie-featured svg.active {
+    fill: #964B00;
+}
